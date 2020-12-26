@@ -1,312 +1,351 @@
-{{IGEM_TopBar}}
-{{MRIIRS_FARIDABAD}}
-T--mriirs_faridabad--logo.jpg
-<html>
-<head>
-<title> Contribution</title>
-<link rel="shortcut icon" href="/favicon.icon">
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Drop-down Menu Bar</title> -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin-top: 50px;
+        background-color: #310e68;
+        background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+      }
+      .container {
+        width: 90%;
+        padding: 20px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
 
-<!-- Required meta tags -->
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      .box {
+        width: 250px;
+        margin: 0 10px;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+        transition: 1s;
+      }
+      .box img {
+        background: fill;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+      }
+      .box:hover {
+        transform: scale(1.3);
+        z-index: 2;
+      }
+      .header {
+        margin-top: 100px;
 
-</head>
+        padding: 30px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+      }
 
-
-	
-
-
-
-<body>
-
-<!-- Required meta tags -->
-
-<section>
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="padding:30px 0px;"">
-<a class="navbar-brand" href="https://2020.igem.org/Team:MRIIRS_FARIDABAD">
-<img src="https://2020.igem.org/wiki/images/1/1d/T--mriirs_faridabad--team1Un.png" height="100" >
-</a>
-
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"> </span>
-</button>
-
-<section class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav mr-auto">
-
-
-
-
-<li class="nav-item dropdown"> 
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project</a>
-
-<section class="dropdown-menu" aria-labelledby="navbarDropdown">
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Description">Description</a>
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Proposed Implementation">Proposed Implementation</a>
-
-</section>
-</li>
-
-
-<li class="nav-item dropdown"> 
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Engineering Success</a>
-
-<section class="dropdown-menu" aria-labelledby="navbarDropdown">
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Design Summary">Design Summary</a>
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Lab Notebook">Lab Notebook</a>
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Experimentation Protocols">Experimentation Protocols</a>
-
-</section>
-</li>
-
-
-
-
-<li class="nav-item dropdown"> 
-<a class="nav-link dropdown-toggle" href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Contribution" >Contribution</a>
-
-
-</li>
-</li>
-
-
-
-<li class="nav-item dropdown"> 
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Human Practices</a>
-
-<section class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Collaborations">Collaboration</a>
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Human_Practices">Integrated Human practices</a>
-
-
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Science Communication">Science Communication</a>
-</section>
-</li>
-
-
-<li class="nav-item dropdown"> 
-<a class="nav-link dropdown-toggle" href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Model"  aria-haspopup="true" aria-expanded="false">Project Modelling</a>
-
-
-</li>
-
-
-<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Judging</a> <section class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Awards">Awards</a>
-</section>
-</li>
-
-<li class="nav-item dropdown"> 
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Team</a>
-
-<section class="dropdown-menu" aria-labelledby="navbarDropdown">
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Team Members">Team Members</a>
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Attributions">Attributions</a>
-<a class="dropdown-item" href="https://2020.igem.org/Team:MRIIRS FARIDABAD/Sponsors">Sponsors</a>
-</section>
-</li>
-</ul>
-</section>
-</nav>
-</section>
-</body>
-<style type="text/css">
-html,body
-{
-height:100%;
+      @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      ssubs {
+        display: inline-block;
+      }
+      body {
+        background-color: #12172b;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        background: #1b1b1b;
+      }
+      nav:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      nav .logo {
+        float: left;
+        color: white;
+        font-size: 27px;
+        font-weight: 600;
+        line-height: 70px;
+        padding-left: 60px;
+      }
+      nav ul {
+        float: right;
+        margin-right: 40px;
+        list-style: none;
+        position: relative;
+      }
+      nav ul li {
+        float: left;
+        display: inline-block;
+        background: #1b1b1b;
+        margin: 0 5px;
+      }
+      nav ul li a {
+        color: white;
+        line-height: 70px;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px 15px;
+      }
+      nav ul li a:hover {
+        color: cyan;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
+      }
+      nav ul ul li a:hover {
+        box-shadow: none;
+      }
+      nav ul ul {
+        position: absolute;
+        top: 90px;
+        border-top: 3px solid cyan;
+        opacity: 0;
+        visibility: hidden;
+        transition: top 0.3s;
+      }
+      nav ul ul ul {
+        border-top: none;
+      }
+      nav ul li:hover > ul {
+        top: 70px;
+        opacity: 1;
+        visibility: visible;
+      }
+      nav ul ul li {
+        position: relative;
+        margin: 0px;
+        width: 150px;
+        float: none;
+        display: list-item;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      }
+      nav ul ul li a {
+        line-height: 50px;
+      }
+      nav ul ul ul li {
+        position: relative;
+        top: -60px;
+        left: 150px;
+      }
+      .show,
+      .icon,
+      input {
+        display: none;
+      }
+      .fa-plus {
+        font-size: 15px;
+        margin-left: 40px;
+      }
+      @media all and (max-width: 968px) {
+        nav ul {
+          margin-right: 0px;
+          float: left;
+        }
+        nav .logo {
+          padding-left: 30px;
+          width: 100%;
+        }
+        .show + a,
+        ul {
+          display: none;
+        }
+        nav ul li,
+        nav ul ul li {
+          display: block;
+          width: 100%;
+        }
+        nav ul li a:hover {
+          box-shadow: none;
+        }
+        .show {
+          display: block;
+          color: white;
+          font-size: 18px;
+          padding: 0 20px;
+          line-height: 70px;
+          cursor: pointer;
+        }
+        .show:hover {
+          color: cyan;
+        }
+        .icon {
+          display: block;
+          color: white;
+          position: absolute;
+          top: 0;
+          right: 40px;
+          line-height: 70px;
+          cursor: pointer;
+          font-size: 25px;
+        }
+        nav ul ul {
+          top: 70px;
+          border-top: 0px;
+          float: none;
+          position: static;
+          display: none;
+          opacity: 1;
+          visibility: visible;
+        }
+        nav ul ul a {
+          padding-left: 40px;
+        }
+        nav ul ul ul a {
+          padding-left: 80px;
+        }
+        nav ul ul ul li {
+          position: static;
+        }
+        [id^="btn"]:checked + ul {
+          display: block;
+        }
+        nav ul ul li {
+          border-bottom: 0px;
+        }
+        span.cancel:before {
+          content: "\f00d";
+        }
+      }
+      .content {
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      header {
+        font-size: 35px;
+        font-weight: 600;
+        padding: 10px 0;
+      }
+      p {
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .navbar {
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 10000;
 }
 
+    </style>
+  </head>
+  <body>
 
 
-
-
-
-<!-- Required meta tags -->
-
-
-
-
-
-
-    <div class="column full_size" >
-
-
-    <nav class="navbar navbar-expand-lg fixed-top" style="padding:60px 100px;">
-        <div class="column full_size">
-
-           
-
-            <a class="navbar-brand" href="main.html"><img src="https://2020.igem.org/wiki/images/b/b9/T--mriirs_faridabad--logo.png"></a>
-
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-
-                                <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
-            </button>
-
-            <!---- <div class="collapse navbar-collapse justify-content-end " id="collapsibleNavId">
-                <ul class="nav">
-                    <style>
-                        a:visited {
-                          color:black;
-                        }
-                      </style>
-                                        
-                </ul>
-            </div>
-        <!---->
-        <div class="collapse navbar-collapse" id="navbarResponsive" style="z-index: 9999;">
-            <ul class="nav navbar-nav ml-auto">
-              <style>
-                a:visited {
-                  color:black;
-                }
-              </style>
-
-                <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" id="navbarDropdown" href="#" style="height: 100%;" role="button" aria-haspopup="true">Project&#160;</a>
-                    <div class="dropdown-menu js-scroll-trigger" role="menu" aria-labelledby="navbarDropdown">
-
-                        
-                        <a class="dropdown-item" role="presentation" href="soft.html">Description</a>
-                        <a class="dropdown-item" role="presentation" href="hard.htm">Proposed Implementation</a>
-                        <a class="dropdown-item" role="presentation" href="Parts.html">Proof of Concept</a>
-                        
-
-                    </div>
-                </li>
-                <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="height: 100%;" role="presentation">Engineering Success&#160;</a>
-                    <div class="dropdown-menu" role="menu">
-                        <a class="dropdown-item" role="presentation" href="exp.html">Design Summary</a>
-                        <a class="dropdown-item" role="presentation" href="nobook.htm">Lab Notebook</a>
-                        <a class="dropdown-item" role="presentation" href="result.html">Experimentation protocols&#160;</a>
-                       
-
-                        <a class="dropdown-item" role="presentation" href="Safety.html">Safety</a>
-                            </div>
-                </li>
-
-                <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="height: 100%;" role="presentation">Contribution&#160;</a>
-                    <div class="dropdown-menu" role="menu">
-                        <a class="dropdown-item" role="presentation" href="collab.html">Parts</a>
-                       <a class="dropdown-item" role="presentation" href="HumanPractices.html">Literature</a>
-                        
-                        </div>
-                </li>
-
-
-                 <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="height: 100%;" role="presentation">Human Practices&#160;</a>
-                    <div class="dropdown-menu" role="menu">
-                        <a class="dropdown-item" role="presentation" href="collab.html">Summary</a>
-                       <a class="dropdown-item" role="presentation" href="HumanPractices.html">Collaboration</a>
-<a class="dropdown-item" role="presentation" href="HumanPractices.html">Integrated Human Practices</a>
-<a class="dropdown-item" role="presentation" href="HumanPractices.html">Partnership & Mentorship</a>
-<a class="dropdown-item" role="presentation" href="HumanPractices.html">Education & Inclusivity</a>
-<a class="dropdown-item" role="presentation" href="HumanPractices.html">Science Communication</a>
-                        
-                        </div>
-                </li>
-
-
-                 <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="height: 100%;" role="presentation">Li-Koff Excellence Area&#160;</a>
-                    <div class="dropdown-menu" role="menu">
-                        <a class="dropdown-item" role="presentation" href="collab.html">Entrepreneurship</a>
-                       <a class="dropdown-item" role="presentation" href="HumanPractices.html">Entertainment Zone</a>
-
-                        </div>
-                </li>
-
-
-                 <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="height: 100%;" role="presentation">Team&#160;</a>
-                    <div class="dropdown-menu" role="menu">
-                        <a class="dropdown-item" role="presentation" href="collab.html">Team Members</a>
-                       <a class="dropdown-item" role="presentation" href="HumanPractices.html">Attributions</a>
-<a class="dropdown-item" role="presentation" href="HumanPractices.html">Sponsors</a>
-                        
-                        </div>
-                </li>
-
-
-
-
-
-                 <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="height: 100%;" role="presentation">Project Modeling&#160;</a>
-                    <div class="dropdown-menu" role="menu">
-                        <a class="dropdown-item" role="presentation" href="collab.html">Overview</a>
-                       <a class="dropdown-item" role="presentation" href="HumanPractices.html">Parameters</a>
-<a class="dropdown-item" role="presentation" href="HumanPractices.html">Equations and Model</a>
-<a class="dropdown-item" role="presentation" href="HumanPractices.html">Result & Conclusion</a>
-<a class="dropdown-item" role="presentation" href="HumanPractices.html">References</a>
-
-                        
-                        </div>
-                </li>
-
-
-
-                
-
-                
-                
-            </ul>
-        </div>
-    </div>
-</nav>
-
-       </div>
-        </nav> 
-<body>
-<section class="home container mb-3">
-    <div class="row mt-5">
-    <div class="col-lg-6 mt-5 py-5 pl-5">
+ <nav class="navbar">
+      <div class="logo"><a href ><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD"><img src="https://2020.igem.org/wiki/images/1/1d/T--mriirs_faridabad--team1Un.png" height="80"></a></div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn" />
+      <ul>
+        <li>
+          <label for="btn-1" class="show">Project +</label>
+          <a href="#">Project +</a>
+          <input type="checkbox" id="btn-1" />
+          <ul >
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Description">Description</a></li>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Proposed_Implementation" >Proposed Implementation</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="btn-1" class="show">Engineering Success +</label>
+          <a href="#">Engineering Success +</a>
+          <input type="checkbox" id="btn-1" />
+          <ul>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Design_Summary">Design Summary</a></li>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Lab_Notebook">Lab Notebook</a></li>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Experimentation_Protocols">experimentation Protocol</a></li>
+          </ul>
+        </li>
+        <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Contribution">Contribution</a></li>
+        <li>
+          <label for="btn-2" class="show">Human Practices +</label>
+          <a href="#">Human Practices +</a>
+          <input type="checkbox" id="btn-2" />
+          <ul>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Collaborations">Collaborations</a></li>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Human_Practices"> Intigrated Human Practices</a></li>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Science_Communication">Science Communication</a></li>
+          </ul>
+        </li>
+        <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Model">Project Modeling</a></li>
+        <li>
+          <label for="btn-2" class="show">Judging +</label>
+          <a href="#">Judging +</a>
+          <input type="checkbox" id="btn-2" />
+          <ul>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Awards">Awards</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="btn-2" class="show">Team +</label>
+          <a href="#">Team +</a>
+          <input type="checkbox" id="btn-2" />
+          <ul>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Team_Members">Team Members</a></li>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Attributions">Attributions</a></li>
+            <li><a href="https://2020.igem.org/Team:MRIIRS_FARIDABAD/Sponsors">Sponsors</a></li>
+          </ul>
+        </li>
         
-    </div>
-    <section class="collaboration">
-        <div class="container "style="padding:10px 5px" background color="#011627">
-            <h1 style="font-size:60px;" class="py-3">Sponsors</h1>
-            <div class="mx-auto heading line"> </div>
-
-            <p class="py-3" > 
-                
-                
-
-<p>
-<b>
-We like to thank our sponsors for believing in us and supporting us through this incredible journey of lifetime. </b>
- </p>
-<img src="https://2020.igem.org/wiki/images/5/53/T--mriirs_faridabad--team1we1.jpg"  style="width:400px;height:400px;">
-    <img src="https://2020.igem.org/wiki/images/f/fc/T--mriirs_faridabad--team1we2.jpg"  style="width:400px;height:400px;"><br></br><br></br>
-<img src="https://2020.igem.org/wiki/images/3/3f/T--mriirs_faridabad--team1we4.jpg"  style="width:400px;height:400px;">
-<img src="https://2020.igem.org/wiki/images/f/f4/T--mriirs_faridabad--team1we5.jpg"  style="width:400px;height:400px;"><br></br><br></br>
-   <img src="https://2020.igem.org/wiki/images/4/44/T--mriirs_faridabad--team1we6.jpg style="width:400px;height:400px;">
-             
-       </div>
-    
-    
- </section>
+      </ul>
+    </nav>
 
 
+    <body>
+      <div class="header">
+        <h1 class="size"><strong style="font-size: 90px">Sponsors</strong></h1>
+      </div>
+      <div class="container">
+        <div class="box">
+          <img
+            src="https://2020.igem.org/wiki/images/5/53/T--mriirs_faridabad--team1we1.jpg"
+          />
+        </div>
+        <div class="box">
+          <img
+            src="https://2020.igem.org/wiki/images/f/fc/T--mriirs_faridabad--team1we2.jpg"
+          />
+        </div>
+        <div class="box">
+          <img
+            src="https://2020.igem.org/wiki/images/3/3f/T--mriirs_faridabad--team1we4.jpg"
+          />
+        </div>
+        <div class="box">
+          <img
+            src="https://2020.igem.org/wiki/images/f/f4/T--mriirs_faridabad--team1we5.jpg"
+          />
+        </div>
+        <div class="box">
+          <img
+            src="https://2020.igem.org/wiki/images/4/44/T--mriirs_faridabad--team1we6.jpg"
+          />
+        </div>
+      </div>
+    </body>
 
-
-<!--Footer-->
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      $(".icon").click(function () {
+        $("span").toggleClass("cancel");
+      });
+    </script>
   </body>
-
-</body>
-
 </html>
