@@ -126,6 +126,14 @@ T--mriirs_faridabad--logo.jpg
 </section>
 </body>
 <style type="text/css">
+    .custom-bg{
+        background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23180d1c' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23261431' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23351947' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23451e5e' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    }
+    </style>    
+<style type="text/css">
 html,body
 {
 height:100%;
@@ -273,14 +281,14 @@ height:100%;
         
 
 
-
-<section class="home container mb-3">
+<div class="custom-bg">
+<section class="home container mb-3" style="background-color:white;">
     <div class="row mt-5">
     <div class="col-lg-6 mt-5 py-5 pl-5">
         
     </div>
     <section class="Description">
-        <div class="container "style="padding:10px 5px" background color="#011627">
+        <div class="container "style="padding:10px 5px; text-align: center" background color="#011627">
             <h1 style="font-size:60px; text-align:center;" class="py-3">Description</h1>
             <div class="mx-auto heading line"> </div>
             <p class="py-3" > 
@@ -292,17 +300,17 @@ height:100%;
                     E.coli has a natural adaptive response mechanism known as the Ada response. It is a DNA damage repair mechanism that gets induced by an O6-methylguanine (O6-MeG) lesion formed due to methylation of DNA in the presence of alkylating agents like nitrosamines. This damage caused in DNA due to methylation is repaired using four Ada response proteins, encoded by three different operons of the “ADA Regulon”. These proteins include Ada methyltransferase, AlkA glycosylase, AlkB dioxygenase and AidB protein. The methylated Ada protein acts as a transcriptional activator for the operons involved in the synthesis of these proteins.
                 </p>
                 <h2 class="py-3">Our Proposition</h2>
-                <ol class="a">
-                    <li> <p>The primary goal of our project is to engineer E.coli that detects the presence of alkylating agents in drinking water : </p>
+                <ul class="a" style="list-style-type: none;">
+                    <li> <h2>The primary goal of our project is to engineer E.coli that detects the presence of alkylating agents in drinking water</h2>
                         <p> For this, we have constitutively expressed the Ada response protein which is released in E.coli upon DNA damage caused due to alkylation. Its constitutive expression allows us to report the slightest concentration of nitrosamines present in water sample. This Ada protein undergoes methylation and further activates the synthesis of the reporter protein present downstream to the ADA-AlkB promoter showing the presence of the targeted compounds via fluorescence <p>.
                         
                         </li>
                  
                    
-                        <li>	<p> We also propose to specifically degrade NDMA : </p>
+                        <li>	<h2> We also propose to specifically degrade NDMA </h2>
                          <p> Pseudomonas mendocina KR1 possesses the T4 monooxygenase gene which has the ability to degrade NDMA. We will introduce this gene in E.coli which, in the presence of toluene, would get activated by methylated Ada protein and help in the degradation of this specific nitrosamine. The completion of this process would be visualized by the change in the colour of the reporter protein.</p>
                         </li>
-                </ol>
+                </ul>
 <br></br>
 <br></br>
 <br></br>
@@ -310,6 +318,7 @@ height:100%;
                 
         </div>
 </section>
+</div>
 <!--Footer-->
 
 
